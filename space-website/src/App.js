@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei'; 
 import Starfield from './Starfield';
 import Planet from './Planet';
+import Rocket from './Rocket';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
 
         {/* Planet */}
         <Planet position={[5, 0, 0]} />
+
+        <Rocket />
 
         {/* Controls */}
         <OrbitControls />
